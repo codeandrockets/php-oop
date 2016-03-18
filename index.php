@@ -2,8 +2,6 @@
 
 require 'Person.php';
 
-$person = new Person;
-$person->name = 'Steven';
-$person->age = 103;
+$person = new Person('Steven', 103);
 
-echo $person->name . ' is ' . $person->age . ' years old';
+echo $person->sentence();
