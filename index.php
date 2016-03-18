@@ -1,7 +1,9 @@
 <?php 
 
-$object = new standardClass;
+require 'Person.php';
 
-$object->name = "Steven";
+$person = new Person;
+$person->name = 'Steven';
+$person->age = 103;
 
-echo $object->name;
+echo $person->name . ' is ' . $person->age . ' years old';
